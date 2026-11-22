@@ -1,8 +1,8 @@
 # Getting Started with RTDE4J
 
-![Java 21+](https://img.shields.io/badge/Java-21%2B-blue)
-![Version 1.0.0](https://img.shields.io/badge/version-1.0.0-green)
-[![Java CI](https://github.com/javiergs/rtde4j-getting-started/actions/workflows/java-ci.yml/badge.svg)](https://github.com/javiergs/rtde4j-getting-started/actions/workflows/java-ci.yml)
+[![Java 21+](https://img.shields.io/badge/Java-21%2B-blue)](https://adoptium.net/temurin/releases/?version=21)
+[![API version 1.0.0](https://img.shields.io/badge/API-1.0.0-green)](https://central.sonatype.com/artifact/com.javiergs/rtde4j/1.0.0)
+[![Java CI](https://github.com/javiergs/rtde4j-getting-started/actions/workflows/java-ci.yml/badge.svg?branch=main)](https://github.com/javiergs/rtde4j-getting-started/actions/workflows/java-ci.yml)
 
 **RTDE4J** is a Java library for communicating with Universal Robots controllers. Use this repository to learn RTDE controller-version queries and explore robot-state concepts using Java 21, Maven, and URSim. The library is published on Maven Central.
 

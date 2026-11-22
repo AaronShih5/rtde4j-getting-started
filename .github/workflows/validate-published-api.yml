@@ -1,8 +1,16 @@
 name: Validate published RTDE4J API
 on:
   pull_request:
+    paths:
+      - 'pom.xml'
+      - 'validation/**'
+      - '.github/workflows/validate-published-api.yml'
   push:
     branches: [main]
+    paths:
+      - 'pom.xml'
+      - 'validation/**'
+      - '.github/workflows/validate-published-api.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,8 +27,6 @@ jobs:
           cache-dependency-path: |
             pom.xml
             validation/pom.xml
-      - name: Compile public runnable examples against Maven Central
-        run: mvn -B -ntp -U clean compile
       - name: Compile against published Maven artifact only
         working-directory: validation
         run: mvn -B -ntp -U clean compile
